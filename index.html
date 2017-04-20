@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Text analyzer</title>
+    <meta charset="utf-8">
+    <link href="https://fonts.googleapis.com/css?family=Roboto+Mono:300,300i,700" rel="stylesheet">    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/4.2.0/normalize.min.css">
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/flexboxgrid/6.3.1/flexboxgrid.min.css">
+    <link rel="stylesheet" type="text/css" href="main.css">
+</head>
+<body>
+<main class="container">
+
+    <div class="row hero">
+        <div class="col-xs-12">
+            <h1>Writer&rsquo;s Text Tool</h1>
+            <p class="description">Paste in text below, submit, and get some basic stats back.</p>
+        </div>
+    </div>
+
+    <div class="row middle-lg">
+        <form class="col-xs-12 col-lg-8" id="textAnalyzer" action="www.somewhere.com">
+            <div>
+                <label for="user-text">Text to analyze</label>
+                <textarea rows="20" id="user-text" name="user-text" placeholder="Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua." required></textarea>
+            </div>
+            <div>
+                <button type="submit">Analyze it!</button>
+            </div>
+        </form>
+
+        <aside class="col-xs-12 col-lg-4">
+            <dl class="text-report ">
+
+            </dl>
+        </aside>
+    </div>
+</main>
+<footer>
+    <div class="container">
+        <div class="row">
+            <p class="col-xs-12 col-lg-6">Built by <a href="">Ria Carmin</a></p>
+            <p class="col-xs-12 col-lg-6"><a href="">On GitHub</a></p>
+        </div>
+    </div>
+</footer>
+
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+    <script src="app.js"></script>
+
+</body>
+</html>
